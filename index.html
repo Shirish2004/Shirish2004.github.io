@@ -4,185 +4,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirish Shekhar Jha | Portfolio</title>
+    <title>Shirish Shekhar Jha | Roboticist & AI Researcher</title>
+    <meta name="description" content="PhD Candidate in EECS specializing in Robotics, Computer Vision, and Reinforcement Learning">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <div class="background-animation"></div>
+    <div class="circuit-background"></div>
+    <div class="geometric-shapes"></div>
 
-    <header>
-        <nav>
-            <a href="#" class="nav-brand">S. S. Jha</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
+    <header id="header">
+        <nav class="navbar">
+            <a href="#" class="nav-brand">
+                <span class="logo-bracket">&lt;</span>
+                <span class="logo-text">S.S.Jha</span>
+                <span class="logo-bracket">/&gt;</span>
+            </a>
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation menu">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <div class="hero-content">
-            <img src="assets/profile.jpeg" alt="Profile Picture of Shirish Shekhar Jha" class="profile-picture">
-
-            <h1>Shirish Shekhar Jha</h1>
-            <p class="subtitle">PhD Candidate in EECS at IISER Bhopal, specializing in Robotics and AI.</p>
-            <p class="bio">
-                My research focuses on robotic manipulators, integrating computer vision and reinforcement learning
-                to build autonomous systems. I thrive on solving complex problems, from developing NLP models for
-                under-resourced languages to designing novel control systems for assistive technologies. </p>
-            <div class="social-links">
-                <a href="mailto:shirishjha2002@gmail.com" target="_blank">Email</a> <a
-                    href="https://github.com/Shirish2004" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/" target="_blank">LinkedIn</a>
-                <a href="https://scholar.google.com target=" target="_blank">Google Scholar</a>
+        <section id="about" class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-robot"></i>
+                        <span>Roboticist & AI Researcher</span>
+                    </div>
+                    <h1 class="glitch-text" data-text="Shirish Shekhar Jha">Shirish Shekhar Jha</h1>
+                    <p class="subtitle">PhD Candidate in EECS at IISER Bhopal</p>
+                    <p class="bio">
+                        Specializing in <span class="highlight">robotic manipulators</span>, integrating 
+                        <span class="highlight">computer vision</span> and <span class="highlight">reinforcement learning</span> 
+                        to build autonomous systems. Passionate about solving complex problems from NLP models for 
+                        under-resourced languages to designing novel control systems for assistive technologies.
+                    </p>
+                    <div class="social-links">
+                        <a href="mailto:shirishjha2002@gmail.com" class="social-btn" target="_blank">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/Shirish2004" class="social-btn" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/" class="social-btn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://scholar.google.com" class="social-btn" target="_blank">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>Scholar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-wrapper">
+                        <div class="orbit-ring"></div>
+                        <div class="orbit-ring orbit-ring-2"></div>
+                        <img src="assets/profile.jpeg" alt="Profile Picture of Shirish Shekhar Jha" class="profile-picture" onerror="this.style.display='none'; this.parentElement.innerHTML='<div class=\'profile-placeholder\'><i class=\'fas fa-user-astronaut\'></i></div>'">
+                    </div>
+                </div>
             </div>
-        </div>
         </section>
 
         <section id="experience" class="content-section">
-            <h2>Experience</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Data Trainee</h3>
-                    <p class="company">Probo Media Technologies</p>
-                    <p class="date">May 2024 – July 2024</p>
-                    <p>Developed an end-to-end news data pipeline and applied LLMs for NLP tasks, improving accuracy by
-                        15%. </p>
+            <h2 class="section-title">
+                <span class="section-number">01.</span>
+                <span class="section-text">Experience</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Trainee</h3>
+                            <span class="timeline-date">May 2024 – July 2024</span>
+                        </div>
+                        <p class="company"><i class="fas fa-building"></i> Probo Media Technologies</p>
+                        <p class="description">Developed an end-to-end news data pipeline and applied LLMs for NLP tasks, improving accuracy by 15%.</p>
+                        <div class="tech-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">LLMs</span>
+                            <span class="tag">Data Pipeline</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>BS Thesis Intern</h3>
-                    <p class="company">IIT Mandi</p>
-                    <p class="date">Jan 2024 – May 2024</p>
-                    <p>Engineered a robotic manipulator with CV and RL, reducing task execution time by 25%. </p>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>BS Thesis Intern</h3>
+                            <span class="timeline-date">Jan 2024 – May 2024</span>
+                        </div>
+                        <p class="company"><i class="fas fa-building"></i> IIT Mandi</p>
+                        <p class="description">Engineered a robotic manipulator with CV and RL, reducing task execution time by 25%.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Robotics</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">RL</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Research Intern</h3>
-                    <p class="company">IIIT Ranchi</p>
-                    <p class="date">Dec 2022 – July 2023</p>
-                    <p>Led NLP research for Urdu, achieving global rank 1 in the LT-EDI 2023 Hope Speech Identification
-                        task. </p>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Research Intern</h3>
+                            <span class="timeline-date">Dec 2022 – July 2023</span>
+                        </div>
+                        <p class="company"><i class="fas fa-building"></i> IIIT Ranchi</p>
+                        <p class="description">Led NLP research for Urdu, achieving global rank 1 in the LT-EDI 2023 Hope Speech Identification task.</p>
+                        <div class="tech-tags">
+                            <span class="tag">NLP</span>
+                            <span class="tag">Urdu</span>
+                            <span class="tag">Research</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="card">
-                    <h3>Summer Intern</h3>
-                    <p class="company">IISER Bhopal</p>
-                    <p class="date">May 2022 – July 2022</p>
-                    <p>Designed an eye-controlled wheelchair using EOG signals with 85% command accuracy. </p>
+
+                <div class="timeline-item" data-aos="fade-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Summer Intern</h3>
+                            <span class="timeline-date">May 2022 – July 2022</span>
+                        </div>
+                        <p class="company"><i class="fas fa-building"></i> IISER Bhopal</p>
+                        <p class="description">Designed an eye-controlled wheelchair using EOG signals with 85% command accuracy.</p>
+                        <div class="tech-tags">
+                            <span class="tag">Assistive Tech</span>
+                            <span class="tag">Signal Processing</span>
+                            <span class="tag">EOG</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="publications" class="content-section">
-            <h2>Publications & Conferences</h2>
-            <div class="list-container">
-                <div class="list-item">
+            <h2 class="section-title">
+                <span class="section-number">02.</span>
+                <span class="section-text">Publications & Conferences</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="publications-grid">
+                <div class="publication-card" data-aos="fade-up">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
                     <h3>Robotic Manipulator Research</h3>
-                    <p><strong>CASE 2024</strong>, IEEE Xplore, Sept 2024</p>
+                    <p class="pub-venue"><strong>CASE 2024</strong> | IEEE Xplore</p>
+                    <p class="pub-date"><i class="far fa-calendar"></i> September 2024</p>
+                    <div class="pub-actions">
+                        <button class="pub-btn"><i class="fas fa-eye"></i> View</button>
+                        <button class="pub-btn"><i class="fas fa-quote-right"></i> Cite</button>
+                    </div>
                 </div>
-                <div class="list-item">
+
+                <div class="publication-card" data-aos="fade-up">
+                    <div class="publication-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
                     <h3>Hope Speech Identification for Urdu (4 Papers)</h3>
-                    <p><strong>RANLP 2023</strong>, ACL Anthology, Sept 2023</p>
+                    <p class="pub-venue"><strong>RANLP 2023</strong> | ACL Anthology</p>
+                    <p class="pub-date"><i class="far fa-calendar"></i> September 2023</p>
+                    <div class="pub-actions">
+                        <button class="pub-btn"><i class="fas fa-eye"></i> View</button>
+                        <button class="pub-btn"><i class="fas fa-quote-right"></i> Cite</button>
+                    </div>
                 </div>
-                <div class="list-item">
-                    <h3>Volunteer & Attendee</h3>
-                    <p>Indian Control Conference (ICC) 2024, ACM Optimization Winter School, Amazon MLSS, ACM Data
-                        Science Summer School</p>
+
+                <div class="publication-card" data-aos="fade-up">
+                    <div class="publication-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3>Conference Participation</h3>
+                    <p class="pub-venue">Volunteer & Attendee</p>
+                    <p class="pub-date">Indian Control Conference (ICC) 2024, ACM Optimization Winter School, Amazon MLSS, ACM Data Science Summer School</p>
                 </div>
             </div>
         </section>
+
         <section id="teaching" class="content-section">
-            <h2>Teaching Experience</h2>
-            <div class="list-container">
-                <div class="list-item">
-                    <h3>Teaching Assistant, Computer Vision (ECS- 312)</h3>
-                    <p><strong>EECS, IISER Bhopal</strong> | Fall 2024</p>
-                    <p>Led weekly tutorials, graded assignments, and held office hours for 91 undergraduate
-                        students.</p>
+            <h2 class="section-title">
+                <span class="section-number">03.</span>
+                <span class="section-text">Teaching Experience</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="teaching-card" data-aos="fade-up">
+                <div class="teaching-icon">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                </div>
+                <div class="teaching-content">
+                    <h3>Teaching Assistant, Computer Vision (ECS-312)</h3>
+                    <p class="company"><i class="fas fa-university"></i> EECS, IISER Bhopal | Fall 2024</p>
+                    <p class="description">Led weekly tutorials, graded assignments, and held office hours for 91 undergraduate students.</p>
                 </div>
             </div>
         </section>
 
         <section id="projects" class="content-section">
-            <h2>Key Projects</h2>
-            <div class="card-container">
-                <div class="card">
+            <h2 class="section-title">
+                <span class="section-number">04.</span>
+                <span class="section-text">Key Projects</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="robotics">Robotics</button>
+                <button class="filter-btn" data-filter="cv">Computer Vision</button>
+                <button class="filter-btn" data-filter="rl">RL</button>
+                <button class="filter-btn" data-filter="nlp">NLP</button>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card" data-category="rl robotics" data-aos="fade-up">
+                    <div class="project-header">
+                        <i class="fas fa-robot project-icon"></i>
+                        <a href="https://github.com/Shirish2004/MARL-SEM-PROJECT" target="_blank" class="project-link-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                     <h3>MARL for Capture The Flag</h3>
-                    <p>Implemented IQL, DQN, and MAPPO algorithms to evaluate cooperative vs. competitive agent
-                        behaviors. </p>
-                    <a href="https://github.com/Shirish2004/MARL-SEM-PROJECT" class="project-link" target="_blank">View
-                        Project &rarr;</a>
+                    <p>Implemented IQL, DQN, and MAPPO algorithms to evaluate cooperative vs. competitive agent behaviors.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Multi-Agent RL</span>
+                        <span class="tag">PyTorch</span>
+                        <span class="tag">Game AI</span>
+                    </div>
+                    <a href="https://github.com/Shirish2004/MARL-SEM-PROJECT" class="project-link" target="_blank">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="card">
+
+                <div class="project-card" data-category="cv" data-aos="fade-up">
+                    <div class="project-header">
+                        <i class="fas fa-leaf project-icon"></i>
+                        <a href="https://github.com/Shirish2004/Vegetation-Segmentation" target="_blank" class="project-link-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                     <h3>Greenery Quantification from Imagery</h3>
-                    <p>Used a U-Net architecture with transfer learning for semantic segmentation of urban vegetation.
-                    </p>
-                    <a href="https://github.com/Shirish2004/Vegetation-Segmentation" class="project-link"
-                        target="_blank">View
-                        Project &rarr;</a>
+                    <p>Used a U-Net architecture with transfer learning for semantic segmentation of urban vegetation.</p>
+                    <div class="tech-tags">
+                        <span class="tag">U-Net</span>
+                        <span class="tag">Segmentation</span>
+                        <span class="tag">Transfer Learning</span>
+                    </div>
+                    <a href="https://github.com/Shirish2004/Vegetation-Segmentation" class="project-link" target="_blank">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
-                <div class="card">
+
+                <div class="project-card" data-category="cv" data-aos="fade-up">
+                    <div class="project-header">
+                        <i class="fas fa-drone project-icon"></i>
+                        <a href="https://github.com/Shirish2004/Farm_Classification" target="_blank" class="project-link-icon">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
                     <h3>UAV-based Strawberry Farm Classification</h3>
-                    <p>Built a deep learning model to classify farm growth stages from UAV data, improving accuracy by
-                        12%. </p>
-                    <a href="https://github.com/Shirish2004/Farm_Classification" class="project-link"
-                        target="_blank">View
-                        Project &rarr;</a>
+                    <p>Built a deep learning model to classify farm growth stages from UAV data, improving accuracy by 12%.</p>
+                    <div class="tech-tags">
+                        <span class="tag">Deep Learning</span>
+                        <span class="tag">UAV</span>
+                        <span class="tag">Classification</span>
+                    </div>
+                    <a href="https://github.com/Shirish2004/Farm_Classification" class="project-link" target="_blank">
+                        View Project <i class="fas fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
         </section>
 
         <section id="skills" class="content-section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages & Databases</h3>
-                    <p>Python, $C/C++$, SQL, MATLAB, $L^AT_EX$</p>
+            <h2 class="section-title">
+                <span class="section-number">05.</span>
+                <span class="section-text">Technical Skills</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="skills-container">
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Languages & Databases</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>Python</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>C/C++</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>SQL</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>MATLAB</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>AI & ML Frameworks</h3>
-                    <p>PyTorch, TensorFlow, Keras, Hugging Face, Scikit-learn</p>
+
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <i class="fas fa-brain"></i>
+                        <h3>AI & ML Frameworks</h3>
+                    </div>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span>PyTorch</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>TensorFlow</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Hugging Face</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <span>Scikit-learn</span>
+                            <div class="skill-bar"><div class="skill-progress" style="width: 92%"></div></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Domains</h3>
-                    <p>NLP, Computer Vision, Reinforcement Learning, LLMs, Robotics, Quantum Computing</p>
+
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <i class="fas fa-robot"></i>
+                        <h3>Robotics & Domains</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Computer Vision</span>
+                        <span class="skill-tag">Reinforcement Learning</span>
+                        <span class="skill-tag">NLP</span>
+                        <span class="skill-tag">LLMs</span>
+                        <span class="skill-tag">Robotics</span>
+                        <span class="skill-tag">Quantum Computing</span>
+                    </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <p>OpenCV, Isaac Sim, Pandas, Numpy, Streamlit, Git</p>
+
+                <div class="skill-category" data-aos="fade-up">
+                    <div class="skill-header">
+                        <i class="fas fa-tools"></i>
+                        <h3>Tools & Platforms</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">Isaac Sim</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section id="leadership" class="content-section">
-            <h2>Volunteering & Leadership</h2>
-            <div class="list-container">
-                <div class="list-item">
+            <h2 class="section-title">
+                <span class="section-number">06.</span>
+                <span class="section-text">Volunteering & Leadership</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="leadership-grid">
+                <div class="leadership-card" data-aos="fade-up">
+                    <div class="leadership-icon">
+                        <i class="fas fa-hands-helping"></i>
+                    </div>
                     <h3>Volunteer, Indian Control Conference (ICC) 2024</h3>
                     <p>Assisted in organizing and facilitating a premier national conference on control systems.</p>
                 </div>
-                <div class="list-item">
+
+                <div class="leadership-card" data-aos="fade-up">
+                    <div class="leadership-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
                     <h3>Football Champion, IISER Bhopal Intra-College Sports Fest</h3>
                     <p>Led and collaborated with the team to secure the championship title.</p>
                 </div>
-                <div class="list-item">
+
+                <div class="leadership-card" data-aos="fade-up">
+                    <div class="leadership-icon">
+                        <i class="fas fa-music"></i>
+                    </div>
                     <h3>Core Member, Mayuraa Dance Club</h3>
                     <p>Actively participated in organizing and performing in university-wide events like flash mobs.</p>
                 </div>
             </div>
         </section>
 
+        <section id="contact" class="content-section contact-section">
+            <h2 class="section-title">
+                <span class="section-number">07.</span>
+                <span class="section-text">Get In Touch</span>
+                <span class="section-line"></span>
+            </h2>
+            <div class="contact-content" data-aos="fade-up">
+                <p class="contact-description">
+                    I'm always open to discussing robotics research, collaboration opportunities, or new projects. 
+                    Feel free to reach out if you'd like to connect!
+                </p>
+                <a href="mailto:shirishjha2002@gmail.com" class="cta-button">
+                    <span>Say Hello</span>
+                    <i class="fas fa-paper-plane"></i>
+                </a>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <p>Designed and built by Shirish Shekhar Jha. &copy; 2025</p>
+        <div class="footer-content">
+            <p>Designed & Built by Shirish Shekhar Jha</p>
+            <div class="footer-links">
+                <a href="https://github.com/Shirish2004" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/" target="_blank" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:shirishjha2002@gmail.com" target="_blank" aria-label="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <p class="footer-year">&copy; 2025</p>
+        </div>
     </footer>
 
+    <button id="scroll-to-top" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
