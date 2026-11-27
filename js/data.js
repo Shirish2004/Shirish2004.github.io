@@ -14,7 +14,7 @@ export const profile = {
     github: "https://github.com/Shirish2004",
     linkedin: "https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/",
     // Paste your Google Scholar profile URL here; the link stays hidden while this is empty.
-    scholar: "",
+    scholar: "https://scholar.google.com/citations?hl=en&user=U5crwMUAAAAJ",
   },
   // Drop a CV without your phone number at this path; the download button appears once the file exists.
   cv: "assets/cv/Shirish_Shekhar_Jha_CV.pdf",
