@@ -1,188 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirish Shekhar Jha | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Shirish Shekhar Jha | Robot learning researcher</title>
+  <meta name="description" content="Shirish Shekhar Jha is a PhD researcher at IISER Bhopal building vision-language-action models, multi-robot planners and the simulators that test them.">
+  <meta name="author" content="Shirish Shekhar Jha">
+  <meta property="og:title" content="Shirish Shekhar Jha | Robot learning researcher">
+  <meta property="og:description" content="Vision-language-action models for surgical handover, bio-lab automation and multi-robot planning.">
+  <meta property="og:image" content="https://shirish2004.github.io/assets/img/profile.webp">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#F3F5F8" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E1726" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Shirish Shekhar Jha",
+    "jobTitle": "PhD researcher",
+    "affiliation": {"@type": "CollegeOrUniversity", "name": "Indian Institute of Science Education and Research Bhopal"},
+    "url": "https://shirish2004.github.io/",
+    "sameAs": ["https://github.com/Shirish2004", "https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/"]
+  }
+  </script>
 </head>
-
 <body>
-    <div class="background-animation"></div>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <header>
-        <nav>
-            <a href="#" class="nav-brand">S. S. Jha</a>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#publications">Publications</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-            </ul>
-        </nav>
-    </header>
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="mark" href="#top" aria-label="Shirish Shekhar Jha, back to top">S. S. Jha</a>
+      <nav aria-label="Sections">
+        <ul class="nav-list">
+          <li><a href="#now">Now</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">About</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <main>
-        <div class="hero-content">
-            <img src="assets/profile.jpeg" alt="Profile Picture of Shirish Shekhar Jha" class="profile-picture">
-
-            <h1>Shirish Shekhar Jha</h1>
-            <p class="subtitle">PhD Candidate in EECS at IISER Bhopal, specializing in Robotics and AI.</p>
-            <p class="bio">
-                My research focuses on robotic manipulators, integrating computer vision and reinforcement learning
-                to build autonomous systems. I thrive on solving complex problems, from developing NLP models for
-                under-resourced languages to designing novel control systems for assistive technologies. </p>
-            <div class="social-links">
-                <a href="mailto:shirishjha2002@gmail.com" target="_blank">Email</a> <a
-                    href="https://github.com/Shirish2004" target="_blank">GitHub</a>
-                <a href="https://www.linkedin.com/in/shirish-shekhar-jha-68b319205/" target="_blank">LinkedIn</a>
-                <a href="https://scholar.google.com target=" target="_blank">Google Scholar</a>
-            </div>
+  <main id="main">
+    <section class="hero wrap" id="top" aria-labelledby="hero-name">
+      <div class="hero-text">
+        <div class="id-row">
+          <img class="portrait" src="assets/img/profile.webp" alt="Portrait of Shirish Shekhar Jha" width="88" height="88">
+          <p class="affil"><span data-bind="role"></span><br><span data-bind="affiliation"></span></p>
         </div>
-        </section>
+        <h1 id="hero-name" class="name">Shirish<br>Shekhar Jha</h1>
+        <p class="tagline" data-bind="tagline"></p>
 
-        <section id="experience" class="content-section">
-            <h2>Experience</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>Data Trainee</h3>
-                    <p class="company">Probo Media Technologies</p>
-                    <p class="date">May 2024 – July 2024</p>
-                    <p>Developed an end-to-end news data pipeline and applied LLMs for NLP tasks, improving accuracy by
-                        15%. </p>
-                </div>
-                <div class="card">
-                    <h3>BS Thesis Intern</h3>
-                    <p class="company">IIT Mandi</p>
-                    <p class="date">Jan 2024 – May 2024</p>
-                    <p>Engineered a robotic manipulator with CV and RL, reducing task execution time by 25%. </p>
-                </div>
-                <div class="card">
-                    <h3>Research Intern</h3>
-                    <p class="company">IIIT Ranchi</p>
-                    <p class="date">Dec 2022 – July 2023</p>
-                    <p>Led NLP research for Urdu, achieving global rank 1 in the LT-EDI 2023 Hope Speech Identification
-                        task. </p>
-                </div>
-                <div class="card">
-                    <h3>Summer Intern</h3>
-                    <p class="company">IISER Bhopal</p>
-                    <p class="date">May 2022 – July 2022</p>
-                    <p>Designed an eye-controlled wheelchair using EOG signals with 85% command accuracy. </p>
-                </div>
+        <div class="reader" role="group" aria-label="Tailor this page for">
+          <span class="reader-label" id="reader-label">Show me what matters for</span>
+          <div class="seg" role="radiogroup" aria-labelledby="reader-label">
+            <button type="button" role="radio" data-audience="recruiter" aria-checked="true">Hiring</button>
+            <button type="button" role="radio" data-audience="scholar" aria-checked="false">Research</button>
+          </div>
+        </div>
+
+        <p class="lede" id="lede" aria-live="polite"></p>
+        <ul class="points" id="points"></ul>
+
+        <div class="actions">
+          <a class="btn btn-primary" href="#now">See current work</a>
+          <a class="btn" id="email-btn" href="#contact">Email me</a>
+          <a class="btn" id="cv-btn" href="#" hidden download>Download CV</a>
+        </div>
+      </div>
+
+      <figure class="hero-fig">
+        <div class="sim-frame">
+          <canvas id="herd" aria-label="Simulation: three shepherd agents herd a flock of forty sheep toward a goal. Click or tap to move the goal." role="img"></canvas>
+          <button type="button" class="sim-toggle" id="sim-toggle" aria-pressed="false">Pause</button>
+        </div>
+        <figcaption>
+          <strong>Fig. 1.</strong> Live StringNet herding: three shepherd agents hold an arc behind the flock and drive it to the green goal.
+          Click or tap the field to move the goal. <span class="sim-stat" id="sim-stat" aria-live="off"></span>
+        </figcaption>
+      </figure>
+    </section>
+
+    <div id="sections">
+      <section class="band" id="now" data-key="now" aria-labelledby="now-h">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 id="now-h">What I'm working on</h2>
+            <p class="sec-sub">Four ongoing projects and the next one. Each card opens the full write-up, including what's built and what's still unproven.</p>
+          </div>
+          <div class="now-grid" id="now-grid"></div>
+        </div>
+      </section>
+
+      <section class="band" id="trajectory" data-key="trajectory" aria-labelledby="traj-h">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 id="traj-h">Where I've been, where I'm going</h2>
+            <p class="sec-sub">From signal processing and NLP, through manipulation, to robots that learn from people.</p>
+          </div>
+          <ol class="traj" id="traj"></ol>
+        </div>
+      </section>
+
+      <section class="band" id="projects" data-key="projects" aria-labelledby="proj-h">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 id="proj-h">Projects</h2>
+            <p class="sec-sub">Everything I've built or co-built, newest first. Filter by area, or pick a skill below to see where I used it.</p>
+          </div>
+          <div class="filters" id="proj-filters" role="toolbar" aria-label="Filter projects"></div>
+          <p class="filter-note" id="filter-note" aria-live="polite"></p>
+          <div class="proj-grid" id="proj-grid"></div>
+        </div>
+      </section>
+
+      <section class="band" id="publications" data-key="publications" aria-labelledby="pub-h">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 id="pub-h">Publications</h2>
+            <p class="sec-sub" id="pub-sub"></p>
+          </div>
+          <div class="filters" id="pub-filters" role="toolbar" aria-label="Filter publications"></div>
+          <ol class="pubs" id="pubs"></ol>
+        </div>
+      </section>
+
+      <section class="band" id="skills" data-key="skills" aria-labelledby="skills-h">
+        <div class="wrap">
+          <div class="sec-head">
+            <h2 id="skills-h">Skills, measured by use</h2>
+            <p class="sec-sub">Each skill shows how many projects used it and in which years. Select one to filter the projects.</p>
+          </div>
+          <div class="skill-legend" aria-hidden="true">
+            <span>Years</span><span class="yr-scale" id="yr-scale"></span>
+          </div>
+          <div class="skill-groups" id="skill-groups"></div>
+        </div>
+      </section>
+
+      <section class="band" id="experience" data-key="experience" aria-labelledby="exp-h">
+        <div class="wrap exp-wrap">
+          <div>
+            <div class="sec-head">
+              <h2 id="exp-h">About me</h2>
             </div>
-        </section>
+            <div class="bio" id="bio"></div>
+            <h3 class="exp-h">Experience and education</h3>
+            <ol class="exp" id="exp"></ol>
+          </div>
+          <aside class="side">
+            <h3>Schools and conferences</h3>
+            <ul class="schools" id="schools"></ul>
+            <h3>Latest on GitHub</h3>
+            <ul class="gh" id="gh"><li class="muted">Loading recent activity…</li></ul>
+          </aside>
+        </div>
+      </section>
+    </div>
 
-        <section id="publications" class="content-section">
-            <h2>Publications & Conferences</h2>
-            <div class="list-container">
-                <div class="list-item">
-                    <h3>Robotic Manipulator Research</h3>
-                    <p><strong>CASE 2024</strong>, IEEE Xplore, Sept 2024</p>
-                </div>
-                <div class="list-item">
-                    <h3>Hope Speech Identification for Urdu (4 Papers)</h3>
-                    <p><strong>RANLP 2023</strong>, ACL Anthology, Sept 2023</p>
-                </div>
-                <div class="list-item">
-                    <h3>Volunteer & Attendee</h3>
-                    <p>Indian Control Conference (ICC) 2024, ACM Optimization Winter School, Amazon MLSS, ACM Data
-                        Science Summer School</p>
-                </div>
-            </div>
-        </section>
-        <section id="teaching" class="content-section">
-            <h2>Teaching Experience</h2>
-            <div class="list-container">
-                <div class="list-item">
-                    <h3>Teaching Assistant, Computer Vision (ECS- 312)</h3>
-                    <p><strong>EECS, IISER Bhopal</strong> | Fall 2024</p>
-                    <p>Led weekly tutorials, graded assignments, and held office hours for 91 undergraduate
-                        students.</p>
-                </div>
-            </div>
-        </section>
+    <section class="contact band" id="contact" aria-labelledby="contact-h">
+      <div class="wrap contact-wrap">
+        <div>
+          <h2 id="contact-h">Let's build something that works on a real robot</h2>
+          <p class="sec-sub">I'm open to research collaborations, internships and roles in robot learning, embodied AI and simulation.</p>
+        </div>
+        <ul class="contact-list" id="contact-list"></ul>
+      </div>
+    </section>
+  </main>
 
-        <section id="projects" class="content-section">
-            <h2>Key Projects</h2>
-            <div class="card-container">
-                <div class="card">
-                    <h3>MARL for Capture The Flag</h3>
-                    <p>Implemented IQL, DQN, and MAPPO algorithms to evaluate cooperative vs. competitive agent
-                        behaviors. </p>
-                    <a href="https://github.com/Shirish2004/MARL-SEM-PROJECT" class="project-link" target="_blank">View
-                        Project &rarr;</a>
-                </div>
-                <div class="card">
-                    <h3>Greenery Quantification from Imagery</h3>
-                    <p>Used a U-Net architecture with transfer learning for semantic segmentation of urban vegetation.
-                    </p>
-                    <a href="https://github.com/Shirish2004/Vegetation-Segmentation" class="project-link"
-                        target="_blank">View
-                        Project &rarr;</a>
-                </div>
-                <div class="card">
-                    <h3>UAV-based Strawberry Farm Classification</h3>
-                    <p>Built a deep learning model to classify farm growth stages from UAV data, improving accuracy by
-                        12%. </p>
-                    <a href="https://github.com/Shirish2004/Farm_Classification" class="project-link"
-                        target="_blank">View
-                        Project &rarr;</a>
-                </div>
-            </div>
-        </section>
+  <footer class="site-footer">
+    <div class="wrap foot-row">
+      <p>© <span id="year"></span> Shirish Shekhar Jha. Built by hand, hosted on GitHub Pages.</p>
+      <p><a href="#top">Back to top</a></p>
+    </div>
+  </footer>
 
-        <section id="skills" class="content-section">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Languages & Databases</h3>
-                    <p>Python, $C/C++$, SQL, MATLAB, $L^AT_EX$</p>
-                </div>
-                <div class="skill-category">
-                    <h3>AI & ML Frameworks</h3>
-                    <p>PyTorch, TensorFlow, Keras, Hugging Face, Scikit-learn</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Domains</h3>
-                    <p>NLP, Computer Vision, Reinforcement Learning, LLMs, Robotics, Quantum Computing</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <p>OpenCV, Isaac Sim, Pandas, Numpy, Streamlit, Git</p>
-                </div>
-            </div>
-        </section>
+  <dialog id="proj-dialog" aria-labelledby="dlg-title">
+    <div class="dlg">
+      <button type="button" class="dlg-close" id="dlg-close" aria-label="Close project details">Close</button>
+      <div id="dlg-body"></div>
+    </div>
+  </dialog>
 
-        <section id="leadership" class="content-section">
-            <h2>Volunteering & Leadership</h2>
-            <div class="list-container">
-                <div class="list-item">
-                    <h3>Volunteer, Indian Control Conference (ICC) 2024</h3>
-                    <p>Assisted in organizing and facilitating a premier national conference on control systems.</p>
-                </div>
-                <div class="list-item">
-                    <h3>Football Champion, IISER Bhopal Intra-College Sports Fest</h3>
-                    <p>Led and collaborated with the team to secure the championship title.</p>
-                </div>
-                <div class="list-item">
-                    <h3>Core Member, Mayuraa Dance Club</h3>
-                    <p>Actively participated in organizing and performing in university-wide events like flash mobs.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer>
-        <p>Designed and built by Shirish Shekhar Jha. &copy; 2025</p>
-    </footer>
-
+  <script type="module" src="js/app.js"></script>
 </body>
-
 </html>
